@@ -35,6 +35,14 @@ export function setLocalStorage(key, data) {
   }
 }
 
+//getParameter function to get URL
+export function getParam(param) {
+  const queryString = window.location.search;
+  const UrlParams = new URLSearchParams(queryString);
+  const product = UrlParams.get(param);
+  return product;
+}
+
 // set a listener for both touchend and click
 export function setClick(selector, callback) {
   const element = qs(selector);
