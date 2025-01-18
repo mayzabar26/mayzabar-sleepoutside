@@ -110,6 +110,8 @@
 
 // // Rest of your cart.js code remains the same
 
+
+
 import { getLocalStorage, qs } from "./utils.mjs";
 
 function fixPath(path) {
